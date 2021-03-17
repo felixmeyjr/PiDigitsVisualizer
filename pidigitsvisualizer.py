@@ -39,7 +39,7 @@ def plot(distribution):
 
 
 if __name__ == '__main__':
-    d = calculateDigits(10000)
+    d = calculateDigits(100)
     # print(len(d))
     print(d)
     d1 = digitsDistribution(d)
