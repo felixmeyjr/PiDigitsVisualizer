@@ -11,12 +11,16 @@ User Input: how many digits?
 
 """
 
+import math
+import matplotlib
 
-def calculateDigits():
-    pass
+
+def calculateDigits(limit):
+    digits = list(str(round(math.pi, limit + 2)))[2:]
+    return digits
 
 
-def digitsDistribution():
+def digitsDistribution(digits):
     pass
 
 
@@ -24,8 +28,5 @@ def plot():
     pass
 
 
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    pass
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    print(calculateDigits(10))
