@@ -39,7 +39,7 @@ def plot(distribution):
         elif val == max(distribution.values()):
             clrs.append("green")
         else:
-            clrs.append("blue")
+            clrs.append("royalblue")
 
     plt.bar(range(len(distribution)), list(distribution.values()), color=clrs, align="center")
     plt.xticks(range(len(distribution)), list(distribution.keys()))
@@ -51,7 +51,7 @@ def plot(distribution):
 
 
 def main():
-    d = calculateDigits(100)
+    d = calculateDigits(1000)
     # print(len(d))
     print(d)
     d1 = digitsDistribution(d)
